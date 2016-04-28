@@ -1,0 +1,23 @@
+#include <string.h>
+int main()
+{
+int i;
+int L;
+int E;
+int T;
+int x, y;
+  for (i=100; i <= 999; i++)
+{
+    L=i/100;
+    E=i/10%10;
+    T=i%10;
+    x=L*100 + E*10 + T + L*100+T*10+E;
+    y=T*100+E*10+L;
+    if (x==y) printf ("%d", i);
+
+}
+return 0;
+
+
+
+}
